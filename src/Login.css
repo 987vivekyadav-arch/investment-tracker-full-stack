@@ -1,0 +1,287 @@
+.login-page {
+    min-height: 100vh;
+    width: 100%;
+
+    background: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    color: #dce5ef;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ==============================
+   LOGIN CARD
+============================== */
+
+.login-page .login-card {
+    width: 390px;
+
+    background: #0b1a2c;
+
+    border: 1px solid #19304a;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ==============================
+   LOGO
+============================== */
+
+.login-page .login-logo {
+    text-align: center;
+
+    color: #edf3f8;
+
+    font-size: 23px;
+
+    font-weight: bold;
+}
+
+.login-page .login-logo span {
+    color: #3e8cff;
+}
+
+.login-page .login-subtitle {
+    text-align: center;
+
+    color: #607289;
+
+    font-size: 8px;
+
+    margin-top: 5px;
+
+    margin-bottom: 27px;
+}
+
+
+/* ==============================
+   HEADING
+============================== */
+
+.login-page .login-heading {
+    color: #edf3f8;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.login-page .login-description {
+    color: #6c7e94;
+
+    font-size: 9px;
+
+    text-align: center;
+
+    line-height: 1.5;
+
+    margin-top: 7px;
+
+    margin-bottom: 23px;
+}
+
+
+/* ==============================
+   FORM
+============================== */
+
+.login-page .login-form {
+    width: 100%;
+}
+
+.login-page .login-field {
+    margin-bottom: 14px;
+}
+
+.login-page .login-field label {
+    display: block;
+
+    color: #8a9caf;
+
+    font-size: 9px;
+
+    margin-bottom: 6px;
+}
+
+.login-page .login-input {
+    width: 100%;
+
+    height: 38px;
+
+    background: #050e18;
+
+    border: 1px solid #203650;
+
+    border-radius: 6px;
+
+    color: #dce5ef;
+
+    padding: 0 11px;
+
+    font-size: 10px;
+
+    outline: none;
+}
+
+.login-page .login-input::placeholder {
+    color: #536981;
+}
+
+.login-page .login-input:focus {
+    border-color: #3989ff;
+
+    box-shadow: 0 0 0 1px rgba(57, 137, 255, 0.12);
+}
+
+
+/* ==============================
+   LOGIN BUTTON
+============================== */
+
+.login-page .login-button {
+    width: 100%;
+
+    height: 39px;
+
+    margin-top: 7px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #1678ff;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.login-page .login-button:hover {
+    background: #0d6ce9;
+}
+
+.login-page .login-button:active {
+    transform: translateY(1px);
+}
+
+
+/* ==============================
+   REGISTER LINK
+============================== */
+
+.login-page .login-register {
+    margin-top: 19px;
+
+    text-align: center;
+
+    color: #64778e;
+
+    font-size: 9px;
+}
+
+.login-page .login-register-link {
+    color: #4d93ff;
+
+    margin-left: 5px;
+
+    text-decoration: none;
+}
+
+.login-page .login-register-link:hover {
+    color: #72abff;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+
+    .login-page {
+        padding: 18px;
+    }
+
+    .login-page .login-card {
+        width: 100%;
+
+        max-width: 390px;
+
+        padding: 25px 21px;
+    }
+
+    .login-page .login-logo {
+        font-size: 21px;
+    }
+
+    .login-page .login-heading {
+        font-size: 18px;
+    }
+
+    .login-page .login-input {
+        height: 40px;
+
+        font-size: 11px;
+    }
+
+    .login-page .login-button {
+        height: 40px;
+
+        font-size: 10px;
+    }
+}
+
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 380px) {
+
+    .login-page {
+        padding: 12px;
+    }
+
+    .login-page .login-card {
+        padding: 22px 17px;
+    }
+
+    .login-page .login-logo {
+        font-size: 19px;
+    }
+
+    .login-page .login-subtitle {
+        margin-bottom: 23px;
+    }
+
+    .login-page .login-heading {
+        font-size: 17px;
+    }
+
+    .login-page .login-description {
+        font-size: 8px;
+    }
+
+    .login-page .login-field {
+        margin-bottom: 12px;
+    }
+
+}

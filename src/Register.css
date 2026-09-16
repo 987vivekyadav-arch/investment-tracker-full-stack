@@ -1,0 +1,287 @@
+.register-page {
+    min-height: 100vh;
+    width: 100%;
+
+    background: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    color: #dce5ef;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ==============================
+   REGISTER CARD
+============================== */
+
+.register-page .register-card {
+    width: 390px;
+
+    background: #0b1a2c;
+
+    border: 1px solid #19304a;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ==============================
+   LOGO
+============================== */
+
+.register-page .register-logo {
+    text-align: center;
+
+    color: #edf3f8;
+
+    font-size: 23px;
+
+    font-weight: bold;
+}
+
+.register-page .register-logo span {
+    color: #3e8cff;
+}
+
+.register-page .register-subtitle {
+    text-align: center;
+
+    color: #607289;
+
+    font-size: 8px;
+
+    margin-top: 5px;
+
+    margin-bottom: 27px;
+}
+
+
+/* ==============================
+   HEADING
+============================== */
+
+.register-page .register-heading {
+    color: #edf3f8;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.register-page .register-description {
+    color: #6c7e94;
+
+    font-size: 9px;
+
+    text-align: center;
+
+    line-height: 1.5;
+
+    margin-top: 7px;
+
+    margin-bottom: 23px;
+}
+
+
+/* ==============================
+   FORM
+============================== */
+
+.register-page .register-form {
+    width: 100%;
+}
+
+.register-page .register-field {
+    margin-bottom: 14px;
+}
+
+.register-page .register-field label {
+    display: block;
+
+    color: #8a9caf;
+
+    font-size: 9px;
+
+    margin-bottom: 6px;
+}
+
+.register-page .register-input {
+    width: 100%;
+
+    height: 38px;
+
+    background: #050e18;
+
+    border: 1px solid #203650;
+
+    border-radius: 6px;
+
+    color: #dce5ef;
+
+    padding: 0 11px;
+
+    font-size: 10px;
+
+    outline: none;
+}
+
+.register-page .register-input::placeholder {
+    color: #536981;
+}
+
+.register-page .register-input:focus {
+    border-color: #3989ff;
+
+    box-shadow: 0 0 0 1px rgba(57, 137, 255, 0.12);
+}
+
+
+/* ==============================
+   REGISTER BUTTON
+============================== */
+
+.register-page .register-button {
+    width: 100%;
+
+    height: 39px;
+
+    margin-top: 7px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #1678ff;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.register-page .register-button:hover {
+    background: #0d6ce9;
+}
+
+.register-page .register-button:active {
+    transform: translateY(1px);
+}
+
+
+/* ==============================
+   LOGIN LINK
+============================== */
+
+.register-page .register-login {
+    margin-top: 19px;
+
+    text-align: center;
+
+    color: #64778e;
+
+    font-size: 9px;
+}
+
+.register-page .register-login-link {
+    color: #4d93ff;
+
+    margin-left: 5px;
+
+    text-decoration: none;
+}
+
+.register-page .register-login-link:hover {
+    color: #72abff;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+
+    .register-page {
+        padding: 18px;
+    }
+
+    .register-page .register-card {
+        width: 100%;
+
+        max-width: 390px;
+
+        padding: 25px 21px;
+    }
+
+    .register-page .register-logo {
+        font-size: 21px;
+    }
+
+    .register-page .register-heading {
+        font-size: 18px;
+    }
+
+    .register-page .register-input {
+        height: 40px;
+
+        font-size: 11px;
+    }
+
+    .register-page .register-button {
+        height: 40px;
+
+        font-size: 10px;
+    }
+}
+
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 380px) {
+
+    .register-page {
+        padding: 12px;
+    }
+
+    .register-page .register-card {
+        padding: 22px 17px;
+    }
+
+    .register-page .register-logo {
+        font-size: 19px;
+    }
+
+    .register-page .register-subtitle {
+        margin-bottom: 23px;
+    }
+
+    .register-page .register-heading {
+        font-size: 17px;
+    }
+
+    .register-page .register-description {
+        font-size: 8px;
+    }
+
+    .register-page .register-field {
+        margin-bottom: 12px;
+    }
+
+}

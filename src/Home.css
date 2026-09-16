@@ -1,0 +1,1296 @@
+.home-page {
+    min-height: 100vh;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    background: #000000;
+
+    color: #dce5ed;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.home-page .dashboard-sidebar {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 220px;
+    height: 100vh;
+
+    box-sizing: border-box;
+
+    padding: 23px 13px;
+
+    background: #050505;
+
+    border-right: 1px solid #182536;
+
+    display: flex;
+
+    flex-direction: column;
+
+    z-index: 10;
+}
+
+
+.home-page .dashboard-logo {
+    padding-left: 7px;
+
+    color: #edf3f8;
+
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+
+.home-page .dashboard-logo span {
+    color: #3d8cff;
+}
+
+
+.home-page .dashboard-subtitle {
+    padding-left: 7px;
+
+    margin-top: 5px;
+    margin-bottom: 27px;
+
+    color: #536578;
+
+    font-size: 9px;
+}
+
+
+.home-page .sidebar-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 10px;
+
+    margin-bottom: 5px;
+
+    border-radius: 5px;
+
+    color: #718195;
+
+    font-size: 11px;
+
+    text-decoration: none;
+}
+
+
+.home-page .sidebar-item span {
+    width: 18px;
+
+    color: #718195;
+
+    text-align: center;
+
+    font-size: 15px;
+}
+
+
+.home-page .sidebar-item:hover {
+    background: #0c1724;
+
+    color: #edf2f6;
+}
+
+
+.home-page .sidebar-active {
+    background: #10243d;
+
+    color: #ffffff;
+}
+
+
+.home-page .sidebar-active span {
+    color: #428cff;
+}
+
+
+.home-page .sidebar-bottom {
+    margin-top: auto;
+}
+
+
+.home-page .sidebar-quote {
+    padding: 8px;
+
+    margin-bottom: 10px;
+
+    color: #526477;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+}
+
+
+.home-page .logout-button {
+    display: block;
+
+    padding: 10px;
+
+    border: 1px solid #192a3c;
+
+    border-radius: 5px;
+
+    color: #7d8c9d;
+
+    font-size: 10px;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.home-page .dashboard-main {
+    width: calc(100% - 220px);
+
+    margin-left: 220px;
+
+    padding: 0 22px 25px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   TOP
+========================= */
+
+.home-page .dashboard-top {
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #142234;
+}
+
+
+.home-page .top-links {
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 29px;
+}
+
+
+.home-page .top-link {
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    color: #637489;
+
+    font-size: 10px;
+
+    text-decoration: none;
+
+    border-bottom: 2px solid transparent;
+}
+
+
+.home-page .top-link-active {
+    color: #edf3f7;
+
+    border-bottom-color: #3d8cff;
+}
+
+
+.home-page .top-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.home-page .sun {
+    margin-right: 10px;
+
+    color: #d6ad5c;
+
+    font-size: 18px;
+}
+
+
+.home-page .user-circle {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #42b79b;
+
+    color: #06100e;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+.home-page .top-user {
+    color: #c9d3dc;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.home-page .welcome-box {
+    min-height: 82px;
+
+    box-sizing: border-box;
+
+    margin-top: 16px;
+    margin-bottom: 13px;
+
+    padding: 15px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #080f18;
+
+    border: 1px solid #172a40;
+
+    border-radius: 8px;
+}
+
+
+.home-page .welcome-box h1 {
+    margin: 0;
+
+    color: #edf3f7;
+
+    font-size: 20px;
+}
+
+
+.home-page .welcome-box p {
+    margin: 6px 0 0;
+
+    color: #61758b;
+
+    font-size: 10px;
+}
+
+
+.home-page .welcome-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.home-page .selected-month {
+    min-width: 125px;
+
+    height: 35px;
+
+    padding: 0 11px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #0b1725;
+
+    border: 1px solid #203650;
+
+    border-radius: 5px;
+
+    color: #8b9aaa;
+
+    font-size: 9px;
+}
+
+
+.home-page .header-add {
+    height: 35px;
+
+    padding: 0 14px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #1678ff;
+
+    color: #ffffff;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   TOP MONTH CARDS
+========================= */
+
+.home-page .cards-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 11px;
+
+    margin-bottom: 14px;
+}
+
+
+.home-page .dashboard-card {
+    min-height: 92px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    background: #080f18;
+
+    border: 1px solid #172a40;
+
+    border-radius: 8px;
+}
+
+
+.home-page .card-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+}
+
+
+.home-page .green-icon {
+    background: #0b3028;
+
+    color: #35c997;
+}
+
+
+.home-page .blue-icon {
+    background: #0c2947;
+
+    color: #3f8cff;
+}
+
+
+.home-page .red-icon {
+    background: #351822;
+
+    color: #ef5d70;
+}
+
+
+.home-page .gray-icon {
+    background: #17222e;
+
+    color: #8795a4;
+}
+
+
+.home-page .card-title {
+    margin-bottom: 6px;
+
+    color: #718298;
+
+    font-size: 9px;
+}
+
+
+.home-page .card-number {
+    color: #edf3f7;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+.home-page .card-change {
+    margin-top: 5px;
+
+    font-size: 8px;
+}
+
+
+.home-page .green-text {
+    color: #35c997;
+}
+
+
+.home-page .blue-text {
+    color: #3f8cff;
+}
+
+
+.home-page .red-text {
+    color: #ef5d70;
+}
+
+
+.home-page .gray-text {
+    color: #718195;
+}
+
+
+/* =========================
+   COMMON SECTIONS
+========================= */
+
+.home-page .data-section,
+.home-page .month-section,
+.home-page .investment-section,
+.home-page .monthly-section,
+.home-page .chart-section,
+.home-page .overall-section,
+.home-page .dashboard-footer {
+    background: #080f18;
+
+    border: 1px solid #172a40;
+
+    border-radius: 8px;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.home-page .section-title {
+    padding: 14px 15px;
+
+    border-bottom: 1px solid #172a40;
+
+    color: #e0e7ee;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.home-page .section-title span {
+    margin-right: 7px;
+
+    color: #428cff;
+}
+
+
+/* =========================
+   INPUT SECTION
+========================= */
+
+.home-page .data-section {
+    margin-bottom: 14px;
+
+    padding-bottom: 14px;
+}
+
+
+.home-page .input-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+
+    padding: 14px 15px 0;
+}
+
+
+.home-page .dashboard-input {
+    width: 100%;
+    height: 38px;
+
+    box-sizing: border-box;
+
+    padding: 0 11px;
+
+    background: #03070b;
+
+    border: 1px solid #203650;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    color: #dce5ed;
+
+    font-size: 10px;
+}
+
+
+.home-page .dashboard-input::placeholder {
+    color: #53667a;
+}
+
+
+.home-page .dashboard-input:focus {
+    border-color: #3788ff;
+}
+
+
+.home-page .add-investment {
+    margin-left: 15px;
+    margin-top: 11px;
+
+    padding: 9px 19px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #1678ff;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   MONTH SELECTOR
+========================= */
+
+.home-page .month-section {
+    margin-bottom: 14px;
+
+    overflow: hidden;
+}
+
+
+.home-page .month-list {
+    min-height: 55px;
+
+    padding: 10px 14px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+
+.home-page .month-button {
+    padding: 7px 11px;
+
+    background: #0b1725;
+
+    border: 1px solid #263d56;
+
+    border-radius: 4px;
+
+    color: #8292a4;
+
+    font-size: 9px;
+
+    cursor: pointer;
+}
+
+
+.home-page .month-button:hover {
+    color: #ffffff;
+
+    border-color: #3989ff;
+}
+
+
+.home-page .month-selected {
+    background: #12365a;
+
+    border-color: #3989ff;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   INVESTMENT TABLE
+========================= */
+
+.home-page .investment-section {
+    margin-bottom: 14px;
+
+    overflow: hidden;
+}
+
+
+.home-page .investment-header,
+.home-page .investment-row,
+.home-page .investment-total {
+    display: grid;
+
+    grid-template-columns:
+        1.3fr
+        1fr
+        1fr
+        1fr
+        105px;
+
+    align-items: center;
+}
+
+
+.home-page .investment-header {
+    min-height: 42px;
+
+    padding: 0 15px;
+
+    color: #63768b;
+
+    font-size: 9px;
+
+    border-bottom: 1px solid #192e45;
+}
+
+
+.home-page .investment-row {
+    min-height: 52px;
+
+    padding: 0 15px;
+
+    color: #c1ccd7;
+
+    font-size: 10px;
+
+    border-bottom: 1px solid #172b40;
+}
+
+
+.home-page .investment-row:hover {
+    background: #0b1827;
+}
+
+
+.home-page .person {
+    color: #dbe3ea;
+}
+
+
+.home-page .amount {
+    color: #bdc9d4;
+}
+
+
+.home-page .profit-value {
+    color: #35c997;
+}
+
+
+.home-page .loss-value {
+    color: #ef5d70;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.home-page .actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+.home-page .edit-button,
+.home-page .delete-button {
+    padding: 7px 8px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+
+.home-page .edit-button {
+    background: #12365a;
+
+    color: #4d98ff;
+}
+
+
+.home-page .delete-button {
+    background: #361b25;
+
+    color: #ef5d70;
+}
+
+
+.home-page .edit-button:hover {
+    background: #19486f;
+}
+
+
+.home-page .delete-button:hover {
+    background: #48202d;
+}
+
+
+/* =========================
+   SELECTED MONTH TOTAL
+========================= */
+
+.home-page .investment-total {
+    min-height: 50px;
+
+    padding: 0 15px;
+
+    background: #050c14;
+
+    color: #d0d9e1;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   LOWER AREA
+========================= */
+
+.home-page .lower-area {
+    display: grid;
+
+    grid-template-columns: 1fr 1.2fr;
+
+    gap: 14px;
+
+    margin-bottom: 14px;
+}
+
+
+.home-page .monthly-section,
+.home-page .chart-section {
+    overflow: hidden;
+}
+
+
+.home-page .monthly-header,
+.home-page .monthly-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    align-items: center;
+}
+
+
+.home-page .monthly-header {
+    min-height: 40px;
+
+    padding: 0 14px;
+
+    color: #63768b;
+
+    font-size: 9px;
+
+    border-bottom: 1px solid #192e45;
+}
+
+
+.home-page .monthly-row {
+    min-height: 43px;
+
+    padding: 0 14px;
+
+    color: #bec9d3;
+
+    font-size: 9px;
+
+    border-bottom: 1px solid #172b40;
+}
+
+
+/* =========================
+   CHART
+========================= */
+
+.home-page .chart-box {
+    height: 320px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow-x: visible;
+}
+
+
+.home-page .chart-box .recharts-text {
+    fill: #9aa8b7;
+}
+
+
+.home-page .chart-box .recharts-cartesian-grid line {
+    stroke: #1a2e43;
+}
+
+
+/* =========================
+   ALL MONTH TOTALS
+========================= */
+
+.home-page .overall-section {
+    padding: 15px;
+
+    margin-bottom: 14px;
+}
+
+
+.home-page .overall-title {
+    margin-bottom: 13px;
+
+    color: #dce5ed;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.home-page .overall-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+.home-page .overall-card {
+    min-height: 70px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    background: #050c14;
+
+    border: 1px solid #192e45;
+
+    border-radius: 6px;
+}
+
+
+.home-page .overall-icon {
+    width: 33px;
+    height: 33px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+
+.home-page .overall-label {
+    color: #65778b;
+
+    font-size: 8px;
+}
+
+
+.home-page .overall-number {
+    margin-top: 5px;
+
+    color: #e1e8ee;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.home-page .dashboard-footer {
+    min-height: 45px;
+
+    padding: 11px 15px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: #607287;
+
+    font-size: 9px;
+}
+
+
+.home-page .dashboard-footer span:last-child {
+    color: #428cff;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1050px) {
+
+    .home-page .dashboard-sidebar {
+        width: 185px;
+    }
+
+
+    .home-page .dashboard-main {
+        width: calc(100% - 185px);
+
+        margin-left: 185px;
+    }
+
+
+    .home-page .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .home-page .lower-area {
+        grid-template-columns: 1fr;
+    }
+
+
+    .home-page .overall-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .home-page .dashboard-sidebar {
+        width: 55px;
+
+        padding: 18px 6px;
+    }
+
+
+    .home-page .dashboard-logo {
+        padding: 0;
+
+        font-size: 9px;
+
+        text-align: center;
+    }
+
+
+    .home-page .dashboard-subtitle {
+        display: none;
+    }
+
+
+    .home-page .sidebar-item {
+        justify-content: center;
+
+        padding: 11px 4px;
+
+        font-size: 0;
+    }
+
+
+    .home-page .sidebar-item span {
+        font-size: 15px;
+    }
+
+
+    .home-page .sidebar-quote {
+        display: none;
+    }
+
+
+    .home-page .logout-button {
+        font-size: 0;
+
+        text-align: center;
+    }
+
+
+    .home-page .dashboard-main {
+        width: calc(100% - 55px);
+
+        margin-left: 55px;
+
+        padding: 0 9px 15px;
+    }
+
+
+    .home-page .top-links {
+        gap: 12px;
+    }
+
+
+    .home-page .top-link {
+        font-size: 8px;
+    }
+
+
+    .home-page .top-right {
+        display: none;
+    }
+
+
+    .home-page .welcome-box {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    .home-page .welcome-actions {
+        width: 100%;
+    }
+
+
+    .home-page .selected-month,
+    .home-page .header-add {
+        flex: 1;
+    }
+
+
+    .home-page .cards-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 7px;
+    }
+
+
+    .home-page .dashboard-card {
+        padding: 10px;
+    }
+
+
+    .home-page .card-icon {
+        width: 31px;
+        height: 31px;
+
+        font-size: 13px;
+    }
+
+
+    .home-page .card-number {
+        font-size: 13px;
+    }
+
+
+    .home-page .input-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .home-page .investment-header {
+        display: none;
+    }
+
+
+    .home-page .investment-row {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+
+        padding: 12px;
+    }
+
+
+    .home-page .actions {
+        grid-column: 1 / -1;
+    }
+
+
+    .home-page .investment-total {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 7px;
+
+        padding: 11px 12px;
+    }
+
+
+    .home-page .monthly-header {
+        display: none;
+    }
+
+
+    .home-page .monthly-row {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 7px;
+
+        padding: 10px 12px;
+    }
+
+
+    .home-page .overall-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .home-page .chart-box {
+        justify-content: flex-start;
+
+        overflow-x: auto;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 430px) {
+
+    .home-page .dashboard-sidebar {
+        width: 47px;
+    }
+
+
+    .home-page .dashboard-main {
+        width: calc(100% - 47px);
+
+        margin-left: 47px;
+
+        padding-left: 7px;
+
+        padding-right: 7px;
+    }
+
+
+    .home-page .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .home-page .overall-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .home-page .welcome-box h1 {
+        font-size: 16px;
+    }
+
+
+    .home-page .top-links {
+        gap: 7px;
+    }
+
+
+    .home-page .top-link {
+        font-size: 7px;
+    }
+
+
+    .home-page .investment-row {
+        font-size: 9px;
+    }
+
+}
