@@ -71,4 +71,4 @@ const token=jwt.sign({userId:data._id},"secret")
 
 
 
-app.listen(5000);
+app.listen(process.env.PORT||5000);
