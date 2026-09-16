@@ -103,7 +103,7 @@ const[password,setPassword]=React.useState("")
                 className="register-button"
                 onClick={function(){
 
-                    fetch("http://localhost:5000/register",{
+                    fetch("https://investment-tracker-full-stack.onrender.com/register",{
                         method:"POST",
                         headers:{
                             "Content-Type":"application/json"

@@ -17,7 +17,7 @@ import "./Home.css";
 function Home(){
 
  function Delete(id){
-fetch("http://localhost:5000/home/"+id,{
+fetch("https://investment-tracker-full-stack.onrender.com/home/"+id,{
      method:"DELETE",
      headers:{
         Authorization:"Bearer " + localStorage.getItem("token")
@@ -48,7 +48,7 @@ fetch("http://localhost:5000/home/"+id,{
 
 function Edit(editId){
 
-fetch("http://localhost:5000/home/"+editId,{
+fetch("https://investment-tracker-full-stack.onrender.com/home/"+editId,{
      method:"PUT",
      headers:{
         "Content-Type":"application/json",
@@ -111,7 +111,7 @@ function FilteredData(){
 
 useEffect(function(){
 
-  fetch("http://localhost:5000/home",{
+  fetch("https://investment-tracker-full-stack.onrender.com/home",{
       headers:{
           Authorization:"Bearer " + localStorage.getItem("token")
       }
@@ -674,7 +674,7 @@ return(
 
             {
 
-                fetch("http://localhost:5000/home",{
+                fetch("https://investment-tracker-full-stack.onrender.com/home",{
 
                     method:"POST",
 
@@ -1053,6 +1053,7 @@ return(
             </BarChart>
 </ResponsiveContainer>
         </div>
+
 
     </div>
 
